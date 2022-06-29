@@ -647,7 +647,7 @@ class Snake {
 
     if (value < 0 || value > 290) {
       //说明🐍撞墙了
-      throw new Error('🐍撞墙了！');
+      throw new Error('游戏结束!请刷新界面重新开始!🐍');
     } //🐍在像左移动时不能往右移动,反之
     //该方式存在问题，当向右走时，一直按左键会导致位置不对，用按键判断替代
     // if (this.bodies[1] && (this.bodies[1] as HTMLElement).offsetLeft === value) {
@@ -671,7 +671,7 @@ class Snake {
 
     if (value < 0 || value > 290) {
       //说明🐍撞墙了
-      throw new Error('🐍撞墙了！');
+      throw new Error('游戏结束!请刷新界面重新开始!🐍');
     } //🐍在像上移动时不能往下移动,反之
     // if (this.bodies[1] && (this.bodies[1] as HTMLElement).offsetTop === value) {
     //     if (value > this.Y) {
@@ -711,7 +711,7 @@ class Snake {
     for (let i = 1; i < this.bodies.length; i++) {
       if (this.X === this.bodies[i].offsetLeft && this.Y === this.bodies[i].offsetTop) {
         //说明撞到了身体
-        throw new Error('游戏结束!');
+        throw new Error('游戏结束!请刷新界面重新开始!🐍');
       }
     }
   }
