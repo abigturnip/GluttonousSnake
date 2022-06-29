@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>贪吃蛇</title>
+    <script defer src="./dist/bundle.js"></script>
+  </head>
+  <link rel="stylesheet" href="./src/css/index.css" />
+  <body>
+    <!-- 创建游戏的主容器 -->
+    <div id="main">
+      <!-- 设置游戏舞台 -->
+      <div class="stage">
+        <!-- 设置🐍 -->
+        <div id="snake">
+          <!-- snake内部的div，表示🐍的各部分 -->
+          <div></div>
+        </div>
+        <!-- 设置食物 -->
+        <div class="food">
+          <!-- 设置食物样式 -->
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <!-- 设置游戏记分牌 -->
+      <div class="score-panel">
+        <div>SCORE:<span class="score">0</span></div>
+        <div>level:<span class="level">1</span></div>
+      </div>
+    </div>
+  </body>
+</html>
